@@ -20,7 +20,7 @@ import (
 
 const (
 	VERSION = "0.0.1"
-	DIR     = ".cnbData"
+	DIR     = ".nucle"
 )
 
 type nbRunner struct {

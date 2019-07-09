@@ -27,11 +27,11 @@ Current Build Date: 06-09-2019
 
 ### Start Nucleome Data Service
 
-In Mac or Linux, start a terminal and change work directory to where you put the `ndata` file. Start this program with command line below.
+In Mac or Linux, start a terminal and change work directory to where you put the `nucledata` file. Start this program with command line below.
 
 `chmod 755 nucledata`
 
-`./ndata`
+`./nucledata`
 
 in Windows 
 

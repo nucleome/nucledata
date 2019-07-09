@@ -17,25 +17,27 @@ Please download the example file and the correspoding executable binary file for
 
 ### Download Binary Executable Program
 
-- [Linux](https://vis.nucleome.org/static/ndata/current/linux/ndata)
+Current Build Date: 06-09-2019
 
-- [Windows](https://vis.nucleome.org/static/ndata/current/win64/ndata.exe)
+- [Linux](https://vis.nucleome.org/static/nucledata/current/linux/nucledata)
 
-- [MacOS](https://vis.nucleome.org/static/ndata/current/mac/ndata)
+- [Windows](https://vis.nucleome.org/static/nucledata/current/win64/nucledata.exe)
+
+- [MacOS](https://vis.nucleome.org/static/nucledata/current/mac/nucledata)
 
 ### Start Nucleome Data Service
 
 In Mac or Linux, start a terminal and change work directory to where you put the `ndata` file. Start this program with command line below.
 
-`chmod 755 ndata`
+`chmod 755 nucledata`
 
 `./ndata`
 
 in Windows 
 
-Just double click `ndata.exe`.
+Just double click `nucledata.exe`.
 
-Then follow the steps in GUI Application to add input file and start data service.
+Then follow the steps in GUI Application to add input excle file and start data service.
 
 
 ## Input Excel 
@@ -64,4 +66,3 @@ In sheet "Index", those entries which Id starts with “#” will be ignored.Col
 #### With Long Label and Meta Link
 ![Sheet Data Example](https://nucleome.github.io/image/sheetData4.png)
 
-## Manage data

@@ -22,7 +22,7 @@ Please download the example file and the correspoding executable binary file for
 
 ### Download Binary Executable Program
 
-Current Build Date: 06-09-2019
+Current Build Date: 07-10-2019
 
 - [Linux](https://vis.nucleome.org/static/nucledata/current/linux/nucledata)
 

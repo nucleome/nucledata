@@ -19,7 +19,7 @@ import (
 )
 
 const (
-	VERSION = "0.0.1"
+	VERSION = "0.0.2"
 	DIR     = ".nucle"
 )
 
@@ -28,9 +28,6 @@ type nbRunner struct {
 	data *data.SimpleWorkbook
 	box  *box.Box
 }
-
-//TODO fucntion for NbConfig
-// Load Data For NbConfig
 
 func (c *nbRunner) GetJson(a string) error {
 	c.Lock()
@@ -94,11 +91,6 @@ func main() {
 	ui.Bind("sendJson", c.GetJson)
 	ui.Bind("nbRun", c.Run)
 	ui.Bind("nbStop", c.Stop)
-	//ui.Bind("", c.Value)
-
-	// Load HTML.
-	// You may also use `data:text/html,<base64>` approach to load initial HTML,
-	// e.g: ui.Load("data:text/html," + url.PathEscape(html))
 
 	ln, err := net.Listen("tcp", "127.0.0.1:0")
 	if err != nil {
@@ -106,23 +98,10 @@ func main() {
 	}
 	defer ln.Close()
 
-	//router := mux.NewRour()
-	//router.Handler(BindataServer("www"))
-	//server := &http.Server{"127.0.0.1:8080", Handler: router}
-	//	go http.Serve(ln, http.FileServer(FS))
-
 	go http.Serve(ln, BindataServer("www"))
 
 	ui.Load(fmt.Sprintf("http://%s", ln.Addr()))
 
-	// You may use console.log to debug your JS code, it will be printed via
-	// log.Println(). Also exceptions are printed in a similar manner.
-	/*
-		ui.Eval(`
-				console.log("Hello, world!");
-		`)
-	*/
-	// Wait until the interrupt signal arrives or browser window is closed
 	sigc := make(chan os.Signal)
 	signal.Notify(sigc, os.Interrupt)
 	select {

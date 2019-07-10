@@ -1,5 +1,10 @@
 # Nucleome Data
 
+[![Build Status](https://travis-ci.org/nucleome/nucledata.svg?branch=master)](https://travis-ci.org/nucleome/nucledata)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nucleome/nucledata)](https://goreportcard.com/report/github.com/nucleome/nucledata)
+[![Licenses](https://img.shields.io/badge/license-bsd-orange.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
+
 *Nucleome Data* is a GUI Client Application for *Nucleome Browser* users to host bigWig, bigBed and .hic data from local drive or internet, and browsing them in *Nucleome Browser* with other available data.
 
 If you are looking for a command line tool to host data in servers instead of your personal computer, please visit this website [Nucleome Server](https://github.com/nucleome/nucleserver) instead.
